@@ -1,27 +1,36 @@
 TF2HudPlus
 ==========
 
-Website: http://smk.ctconcerto.net/tf2/
-Steam Group: http://steamcommunity.com/groups/tf2hudplus
+![TF2Hud+](http://smk.ctconcerto.net/tf2/css/logo_wide.png "TF2Hud+")
 
-An upgraded stock TF2 hud with tweaks and useful features.
+**Website**: http://smk.ctconcerto.net/tf2/
+
+**Steam Group**: http://steamcommunity.com/groups/tf2hudplus
+
+*TF2Hud+* is a custom HUD modification for Team Fortress 2 based on the original default HUD, but updated with new features the stock HUD lacks. In addition are some relocated HUD elements to suit higher resolution screens.
+
+Questions, suggestions, bug reports? Use the Steam group discussions. For screenshots, visit the website or use the links in the Steam group.
 
 Installation
 ==========
 
-Microsoft Windows:
+*Obviously, this requires you have Steam and Team Fortress 2 installed on your operating system.*
 
-Put the included "HUD" folder inside the following directory: "C:\Program Files\Steam\SteamApps\common\Team Fortress 2\tf\custom"
+Doing it right: `custom\tf2hudplus-master\`
 
-Note: C:\ may be replaced with the drive letter you installed Windows on.
-Note: 64-bit Windows users will need to use "Program Files (x86)" instead of "Program Files".
+Doing it **WRONG**: `custom\resource\` or `custom\scripts\` or `custom\tf2hudplus-master.vpk`
 
-GNU/Linux:
+###Microsoft Windows
+Put the included folder inside the following directory: `C:\Program Files\Steam\SteamApps\common\Team Fortress 2\tf\custom`
 
-Put the included "HUD" folder inside the following directory: "~/Steam/SteamApps/common/Team Fotress 2/tf/custom"
+**Note**: `C:\` may be replaced with the drive letter you installed Windows on.
 
-Mac OS:
+**Note**: 64-bit Windows users will need to use `Program Files (x86)` instead of `Program Files`.
 
-Put the included "HUD" folder inside the following directory: "(your home folder)/Library/Application Support/Steam/SteamApps/common/Team Fortress 2/tf/custom"
+###GNU/Linux
+Put the included folder inside the following directory: `~/Steam/SteamApps/common/Team Fotress 2/tf/custom`
 
-Note: Replace (your home folder) with the name of your home folder.
+###Mac OS
+Put the included folder inside the following directory: `(your home folder)/Library/Application Support/Steam/SteamApps/common/Team Fortress 2/tf/custom`
+
+**Note**: Replace `(your home folder)` with the name of your home folder.
