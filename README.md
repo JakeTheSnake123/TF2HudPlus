@@ -7,7 +7,7 @@ TF2HudPlus
 
 **Steam Group**: http://steamcommunity.com/groups/tf2hudplus
 
-*TF2Hud+* is a custom HUD modification for Team Fortress 2 based on the original default HUD, but updated with new features the stock HUD lacks. In addition are some relocated HUD elements to suit higher resolution screens.
+*TF2Hud+* is a custom HUD modification for Team Fortress 2 based on the original default HUD, but updated with new features, UI improvements and fixes. In addition are some relocated HUD elements to suit high resolution screens, and low resolution screens as well.
 
 Questions, suggestions, bug reports? Use the Steam group discussions. For screenshots, visit the website or use the links in the Steam group.
 

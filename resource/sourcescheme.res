@@ -7,7 +7,8 @@ Scheme
     // this is a list of all the colors used by the scheme
     Colors
     {
-        "Accent"    "184 56 59 255" // this is the accent color used throughout tf2hud+, change it to whatever you like
+        "Accent"	"178 84 37 255" // this is the accent color used throughout tf2hud+, change it to whatever you like
+		"White"	"255 255 255 255"
         
         "TFDarkBrown"               "60 56 53 255"
         "TFDarkBrownTransparent"    "60 56 53 190"
@@ -51,7 +52,7 @@ Scheme
 
         Button.TextColor                "TFDarkBrown"
         Button.BgColor                  "TFTanLight"
-        Button.ArmedTextColor           "TFTextBright"
+        Button.ArmedTextColor           "White"
         Button.ArmedBgColor             "Accent"
         Button.DepressedTextColor       "TFDarkBrown"
         Button.DepressedBgColor         "TFTanLight"    
@@ -60,8 +61,8 @@ Scheme
         CheckButton.TextColor           "TFTextBright"
         CheckButton.SelectedTextColor       "TFTextBright"
         CheckButton.BgColor             "ListBG"
-        CheckButton.HighlightFgColor        "TFTextMedium"
-        CheckButton.ArmedBgColor        "Blank"
+        CheckButton.HighlightFgColor        "White"
+        CheckButton.ArmedBgColor        "Accent"
         CheckButton.DepressedBgColor        "Blank"
         CheckButton.Border1             "Border.Dark"       // the left checkbutton border
         CheckButton.Border2             "Border.Bright"     // the right checkbutton border
@@ -76,7 +77,7 @@ Scheme
         ComboBoxButton.DisabledBgColor  "Blank"
         
         RadioButton.TextColor       "TFTextBright"
-        RadioButton.SelectedTextColor   "TFTextBright"
+        RadioButton.SelectedTextColor   "White"
         RadioButton.ArmedTextColor  "Accent"
         
         Frame.BgColor                   "TFDarkBrown"
@@ -85,7 +86,7 @@ Scheme
         FrameGrip.Color2                "TFDarkBrown"
         FrameTitleButton.FgColor        "TFTanBright"
         FrameTitleBar.Font              "UiBold"
-        FrameTitleBar.TextColor         "TFTextBright"
+        FrameTitleBar.TextColor         "White"
         FrameTitleBar.DisabledTextColor "TFTanLight"
         FrameTitleBar.BgColor           "Accent" // FrameTitleBar.BgColor is not used in the normal sourcescheme. it creates a block of color near the top of the window
         
@@ -100,7 +101,7 @@ Scheme
         ListPanel.TextColor                 "TFTextBright"
         ListPanel.BgColor                   "ListBG"
         ListPanel.SelectedBgColor           "Accent"
-        ListPanel.SelectedTextColor         "TFTextBright"
+        ListPanel.SelectedTextColor         "White"
         ListPanel.SelectedOutOfFocusBgColor "SelectionBG2"
         
         MainMenu.TextColor          "TanLight"          [$WIN32]
@@ -110,19 +111,19 @@ Scheme
         Menu.TextInset                  "6"
         Menu.FgColor            "TFTextLight"
         Menu.BgColor            "ListBG"
-        Menu.ArmedFgColor       "TFTextBright"
+        Menu.ArmedFgColor       "White"
         Menu.ArmedBgColor       "Accent"
         Menu.TextColor          "TFTanLight"
-        Menu.ArmedTextColor     "TFTanLight"
+        Menu.ArmedTextColor     "White"
         Menu.DividerColor       "BorderDark"
         
         RichText.TextColor              "TFTextBright" // richtext stuff, probably has a use?
-        RichText.SelectedTextColor      "TFTextBright"
+        RichText.SelectedTextColor      "White"
         RichText.SelectedBgColor        "Accent"
         
         ScrollBarButton.FgColor             "TFDarkBrown"
         ScrollBarButton.BgColor             "TFTanLight"
-        ScrollBarButton.ArmedFgColor        "TFTextBright"
+        ScrollBarButton.ArmedFgColor        "White"
         ScrollBarButton.ArmedBgColor        "Accent"
         ScrollBarButton.DepressedFgColor    "TFDarkBrown"
         ScrollBarButton.DepressedBgColor    "TFTanLight"
@@ -139,19 +140,15 @@ Scheme
         TextEntry.TextColor                 "TFTextBright"
         TextEntry.DisabledTextColor         "TFTextMedium"
         TextEntry.SelectedBgColor           "Accent"
-        TextEntry.SelectedTextColor         "TFTextBright"
+        TextEntry.SelectedTextColor         "White"
         
-        Tooltip.TextColor           "TFTextBright"
+        Tooltip.TextColor           "White"
         Tooltip.BgColor             "Accent"
         
-        Frame.TitleTextInsetX           14
-        Frame.ClientInsetY              9
-        Frame.ClientInsetX              8
-        Frame.FocusTransitionEffectTime "0.3"
-        Frame.TransitionEffectTime      "0.3"
-        Frame.AutoSnapRange             "0"
-        
         ProgressBar.FgColor             "Accent"
+		
+		PropertySheet.TextColor			"TFDarkBrown"
+		PropertySheet.SelectedTextColor	"White"
     }
     
     Fonts
