@@ -3,92 +3,86 @@
 Scheme
 {
     //////////////////////// COLORS ///////////////////////////
-    // color details
-    // this is a list of all the colors used by the scheme
-    Colors
-    {
-        "Accent"	"178 84 37 255" // this is the accent color used throughout tf2hud+, change it to whatever you like
-		"White"	"255 255 255 255"
-        
-        "TFDarkBrown"               "60 56 53 255"
-        "TFDarkBrownTransparent"    "60 56 53 190"
-        "TFTanBright"               "236 227 203 150"
-        "TFTanLight"                "201 188 162 150"
-        "TFTanMedium"               "131 121 104 150"
-        
-        "TFTanLightBright"          "229 223 211 90"
-        "TFTanLightDark"            "96 90 78 90"
-        
-        "TFOrangeBright"            "156 82 33 255"
-        
-        "TFTextBright"              "251 236 203 150"
-        "TFTextLight"               "201 188 162 255"
-        "TFTextMedium"              "131 121 104 255"
-        "TFTextMediumDark"          "104 96 83 255"
-        "TFTextBlack"               "42 39 37 255"
-        "TFTextDull"                "131 121 104 255"
+	// color details
+	// this is a list of all the colors used by the scheme
+	Colors
+	{
+	    "TFDarkBrown"               "50 46 43 255"
+	    "TFTanBright"               "236 227 203 150"
+	    "TFTanLight"                "201 188 162 150"
+	    "TFTanMedium"               "131 121 104 150"
 
-        "TFMediumBrown"     "69 64 58 255"
+		"TFOrangeBright"            "200 80 60 255"
+	    
+	    "TFTextBright"              "251 236 203 255"
+	    "TFTextLight"               "201 188 162 255"
+	    "TFTextMedium"              "131 121 104 255"
+	    "TFTextMediumDark"          "104 96 83 255"
+	    "TFTextDull"                "131 121 104 255"
 
-        "QuickListBGDeselected"     "69 64 58 255"
-        "QuickListBGSelected"               "131 121 104 150"
-        
-        "Blank"             "0 0 0 0"
-        
-        // background colors
-        "ControlBG"         "76 88 68 255"      // background color of controls
-        "ControlDarkBG"     "90 106 80 255"     // darker background color; used for background of scrollbars
-        "WindowBG"          "62 70 55 255"      // background color of text edit panes (chat, text entries, etc.)
-        "SelectionBG"       "90 84 75 255"  // background color of any selected text or menu item
-        "SelectionBG2"      "69 64 57 255"      // selection background in window w/o focus
-        "ListBG"            "39 36 34 255"      // background of server browser, buddy list, etc.
-    }
-    BaseSettings
-    {
+	    "QuickListBGDeselected"		"69 64 58 255"
+	    "QuickListBGSelected"               "131 121 104 150"
+	    
+	    "Blank"				"0 0 0 0"
+	    
+	    // background colors
+		"ControlBG"			"76 88 68 255"		// background color of controls
+		"ControlDarkBG"		"90 106 80 255"		// darker background color; used for background of scrollbars
+		"WindowBG"			"62 70 55 255"		// background color of text edit panes (chat, text entries, etc.)
+		"SelectionBG"		"90 84 75 255"	// background color of any selected text or menu item
+		"SelectionBG2"		"69 64 57 255"		// selection background in window w/o focus
+		"ListBG"			"32 30 30 255"		// background of server browser, buddy list, etc.
+	}
+	BaseSettings
+	{
         // scheme-specific colors
-        Border.Bright                   "TFTanLightDark"    // the lit side of a control
-        Border.Dark                     "TFTanLightDark"        // the dark/unlit side of a control
+        Border.Bright                   "Blank"    // the lit side of a control
+        Border.Dark                     "Blank"        // the dark/unlit side of a control
         Border.Selection                "BorderSelection"           // the additional border color for displaying the default/selected button
 
         Button.TextColor                "TFDarkBrown"
         Button.BgColor                  "TFTanLight"
         Button.ArmedTextColor           "White"
-        Button.ArmedBgColor             "Accent"
+        Button.ArmedBgColor             "TFOrangeBright"
         Button.DepressedTextColor       "TFDarkBrown"
         Button.DepressedBgColor         "TFTanLight"    
         Button.FocusBorderColor         "TransparentBlack"
         
         CheckButton.TextColor           "TFTextBright"
         CheckButton.SelectedTextColor       "TFTextBright"
-        CheckButton.BgColor             "ListBG"
-        CheckButton.HighlightFgColor        "White"
-        CheckButton.ArmedBgColor        "Accent"
+        CheckButton.BgColor             "TransparentBlack"
+        CheckButton.HighlightFgColor        "TFTextBright"
+        CheckButton.ArmedBgColor        "Blank"
         CheckButton.DepressedBgColor        "Blank"
         CheckButton.Border1             "Border.Dark"       // the left checkbutton border
         CheckButton.Border2             "Border.Bright"     // the right checkbutton border
-        CheckButton.Check               "Accent"    // color of the check itself
-        CheckButton.DisabledBgColor     "ListBG"
+        CheckButton.Check               "TFTextBright"    // color of the check itself
+        CheckButton.DisabledBgColor     "TransparentBlack"
 
         ToggleButton.SelectedTextColor  "TFTextBright"
         
-        ComboBoxButton.ArrowColor       "TFTanLight"
-        ComboBoxButton.ArmedArrowColor  "Accent"
+        ComboBoxButton.ArrowColor       "TFTextBright"
+        ComboBoxButton.ArmedArrowColor  "TFTextBright"
         ComboBoxButton.BgColor          "Blank"
         ComboBoxButton.DisabledBgColor  "Blank"
         
         RadioButton.TextColor       "TFTextBright"
         RadioButton.SelectedTextColor   "White"
-        RadioButton.ArmedTextColor  "Accent"
+        RadioButton.ArmedTextColor  "TFOrangeBright"
         
+		Frame.FocusTransitionEffectTime	"0"
+		Frame.TransitionEffectTime		"0"
         Frame.BgColor                   "TFDarkBrown"
-        Frame.OutOfFocusBgColor         "TFDarkBrownTransparent"
-        FrameGrip.Color1                "TFTanMedium"
-        FrameGrip.Color2                "TFDarkBrown"
+        Frame.OutOfFocusBgColor         "TFDarkBrown"
+//		Frame.BgColor                   "Blank"
+//		Frame.OutOfFocusBgColor        "Blank"
+        FrameGrip.Color1                "Blank"
+        FrameGrip.Color2                "Blank"
         FrameTitleButton.FgColor        "TFTanBright"
+		FrameTitleButton.DisabledFgColor	"TFTanBright"
         FrameTitleBar.Font              "UiBold"
-        FrameTitleBar.TextColor         "White"
-        FrameTitleBar.DisabledTextColor "TFTanLight"
-        FrameTitleBar.BgColor           "Accent" // FrameTitleBar.BgColor is not used in the normal sourcescheme. it creates a block of color near the top of the window
+        FrameTitleBar.TextColor         "TFOrangeBright"
+        FrameTitleBar.DisabledTextColor "TFOrangeBright"
         
         Label.TextDullColor             "TFTextDull"
         Label.TextColor                 "TFTextBright"
@@ -99,8 +93,8 @@ Scheme
         Label.DisabledFgColor2          "Blank" 
         
         ListPanel.TextColor                 "TFTextBright"
-        ListPanel.BgColor                   "ListBG"
-        ListPanel.SelectedBgColor           "Accent"
+        ListPanel.BgColor                   "TransparentBlack"
+        ListPanel.SelectedBgColor           "TFOrangeBright"
         ListPanel.SelectedTextColor         "White"
         ListPanel.SelectedOutOfFocusBgColor "SelectionBG2"
         
@@ -112,47 +106,118 @@ Scheme
         Menu.FgColor            "TFTextLight"
         Menu.BgColor            "ListBG"
         Menu.ArmedFgColor       "White"
-        Menu.ArmedBgColor       "Accent"
+        Menu.ArmedBgColor       "TFOrangeBright"
         Menu.TextColor          "TFTanLight"
         Menu.ArmedTextColor     "White"
         Menu.DividerColor       "BorderDark"
         
         RichText.TextColor              "TFTextBright" // richtext stuff, probably has a use?
         RichText.SelectedTextColor      "White"
-        RichText.SelectedBgColor        "Accent"
+        RichText.SelectedBgColor        "TFOrangeBright"
         
         ScrollBarButton.FgColor             "TFDarkBrown"
         ScrollBarButton.BgColor             "TFTanLight"
         ScrollBarButton.ArmedFgColor        "White"
-        ScrollBarButton.ArmedBgColor        "Accent"
+        ScrollBarButton.ArmedBgColor        "TFOrangeBright"
         ScrollBarButton.DepressedFgColor    "TFDarkBrown"
         ScrollBarButton.DepressedBgColor    "TFTanLight"
 
         ScrollBarSlider.BgColor             "TFTanMedium"       // this isn't really used
         ScrollBarSlider.FgColor             "TFTanLight"        // handle with which the slider is grabbed
+		
+		SectionedListPanel.HeaderTextColor	"White"
+		SectionedListPanel.DividerColor		"Blank"
+		SectionedListPanel.TextColor		"TFTanBright"
+		SectionedListPanel.BrightTextColor	"TFTanBright"
+		SectionedListPanel.SelectedTextColor			"White"
+		SectionedListPanel.SelectedBgColor				"TFOrangeBright"
+		SectionedListPanel.OutOfFocusSelectedTextColor	"White"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"SelectionBG2"
         
-        Slider.NobColor             "TFTanLight"        
+        Slider.NobColor             "TFTanLight"
         Slider.TextColor            "TFTextBright"
-        Slider.TrackColor           "ListBG"
+        Slider.TrackColor           "TransparentBlack"
         Slider.DisabledTextColor1   "TFTextMediumDark"
         Slider.DisabledTextColor2   "Blank"
         
         TextEntry.TextColor                 "TFTextBright"
         TextEntry.DisabledTextColor         "TFTextMedium"
-        TextEntry.SelectedBgColor           "Accent"
+        TextEntry.SelectedBgColor           "TFOrangeBright"
         TextEntry.SelectedTextColor         "White"
         
         Tooltip.TextColor           "White"
-        Tooltip.BgColor             "Accent"
+        Tooltip.BgColor             "TFOrangeBright"
         
-        ProgressBar.FgColor             "Accent"
+        ProgressBar.FgColor             "TFOrangeBright"
 		
 		PropertySheet.TextColor			"TFDarkBrown"
 		PropertySheet.SelectedTextColor	"White"
-    }
-    
+	}
+
+	Borders
+	{
+//		FrameBorder
+//		{
+//			"bordertype"			"scalable_image"
+//			"backgroundtype"		"2"
+//			
+//			"image"					"loadout_rect"
+//			"src_corner_height"		"24"				// pixels inside the image
+//			"src_corner_width"		"24"
+//			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
+//			"draw_corner_height" 	"11"	
+//		}
+		ButtonKeyFocusBorder
+		{
+			"inset" "0 0 0 0"
+			"backgroundtype" "2"
+		}
+
+		ButtonDepressedBorder
+		{
+			"inset" "0 0 0 0"
+			"backgroundtype" "2"
+		}
+		DepressedBorder
+		{
+			"inset" "0 0 1 1"
+			"backgroundtype" "2"
+		}
+		RaisedBorder
+		{
+			"inset" "0 0 1 1"
+			"backgroundtype" "2"
+		}
+		TabBorder
+		{
+			"inset" "0 0 1 1"
+			"backgroundtype" "2"
+
+		}
+
+		TabActiveBorder
+		{
+			"inset" "0 0 1 0"
+			"backgroundtype" "2"
+
+		}
+
+	}
+	
     Fonts
     {
+		"UiBold"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"18"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		
         "DefaultFixedOutline" 
         {
             "1" //For screen heights between 480 and 599 (eg 4:3 aspect Width 640x480 High, Width 720x576 High. 16:10 aspect Width 720x480 High)
@@ -236,6 +301,7 @@ Scheme
                 "antialias"  "0"  //not default added //smoothing the edges.
             }
         }
+		
         "MainMenuFont"
         {
             "1" [$WIN32]
@@ -247,6 +313,7 @@ Scheme
                 "antialias" "1"
             }
         }
+		
         "MenuLarge"
         {
             "1" [$X360]
@@ -324,7 +391,6 @@ Scheme
                 "antialias" "1"
             }
         }
-        
                 
         AchievementItemTitle    [$WIN32]
         {
@@ -364,23 +430,23 @@ Scheme
                 "antialias"     "1" [!$OSX]
             }
         }
-
     }
-    
-    CustomFontFiles
-    {
-        "9"
-        {
-            "font" "resource/TF2Build.ttf"
-            "name" "TF2 Build"
-            "russian"
-            {
-                "range" "0x0000 0xFFFF"
-            }
-            "polish"
-            {
-                "range" "0x0000 0xFFFF"
-            }
-        }
-    }
+}
+	
+	CustomFontFiles
+	{
+		"9"
+		{
+			"font" "resource/TF2Build.ttf"
+			"name" "TF2 Build"
+			"russian"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+			"polish"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+		}
+	}
 }
