@@ -568,6 +568,11 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"fgcolor"		"236 227 203 255"
+		
+		if_mvm
+        {
+            "visible"       "0"
+        }
 	}	
     "HorizontalLine"
     {

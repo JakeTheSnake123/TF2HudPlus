@@ -679,8 +679,8 @@ Scheme
 				"name"		"TF2 Secondary" // use TF2's font
 				"tall"		"18"
 				"weight"	"900"
-				"additive"	"0"
 				"antialias" "1"
+				"additive"	"1"
 			}
 		}
 

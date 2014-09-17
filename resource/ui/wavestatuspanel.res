@@ -28,6 +28,7 @@
 		"fieldName"		"WaveCountLabel"
 		"font"			"HudFontSmallestBold"
 		"fgcolor"		"TanLight"
+		"fgcolor_minmode"	"HUDBlack"
 		"xpos"			"200"
 		"ypos"			"6"
 		"zpos"			"5"

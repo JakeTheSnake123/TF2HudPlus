@@ -12,7 +12,7 @@ Scheme
 	    "TFTanLight"                "201 188 162 150"
 	    "TFTanMedium"               "131 121 104 150"
 
-		"TFOrangeBright"            "200 80 60 255"
+		"TFOrangeBright"            "146 73 60 255"
 	    
 	    "TFTextBright"              "251 236 203 255"
 	    "TFTextLight"               "201 188 162 255"
@@ -74,15 +74,15 @@ Scheme
 		Frame.TransitionEffectTime		"0"
         Frame.BgColor                   "TFDarkBrown"
         Frame.OutOfFocusBgColor         "TFDarkBrown"
-//		Frame.BgColor                   "Blank"
-//		Frame.OutOfFocusBgColor        "Blank"
         FrameGrip.Color1                "Blank"
         FrameGrip.Color2                "Blank"
-        FrameTitleButton.FgColor        "TFTanBright"
-		FrameTitleButton.DisabledFgColor	"TFTanBright"
+        FrameTitleButton.FgColor        "White"
+		FrameTitleButton.DisabledFgColor	"TFTanLight"
+		FrameTitleBar.BgColor			"TFOrangeBright"
         FrameTitleBar.Font              "UiBold"
-        FrameTitleBar.TextColor         "TFOrangeBright"
-        FrameTitleBar.DisabledTextColor "TFOrangeBright"
+        FrameTitleBar.TextColor         "White"
+        FrameTitleBar.DisabledTextColor "TFTanLight"
+		FrameTitleBar.DisabledBgColor	"TFTextMediumDark"
         
         Label.TextDullColor             "TFTextDull"
         Label.TextColor                 "TFTextBright"
@@ -155,24 +155,17 @@ Scheme
 	}
 
 	Borders
-	{
-//		FrameBorder
-//		{
-//			"bordertype"			"scalable_image"
-//			"backgroundtype"		"2"
-//			
-//			"image"					"loadout_rect"
-//			"src_corner_height"		"24"				// pixels inside the image
-//			"src_corner_width"		"24"
-//			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
-//			"draw_corner_height" 	"11"	
-//		}
+	{	
+		FrameBorder
+		{
+			// rounded corners for frames
+			"backgroundtype" "2"
+		}
 		ButtonKeyFocusBorder
 		{
 			"inset" "0 0 0 0"
 			"backgroundtype" "2"
 		}
-
 		ButtonDepressedBorder
 		{
 			"inset" "0 0 0 0"
@@ -192,31 +185,16 @@ Scheme
 		{
 			"inset" "0 0 1 1"
 			"backgroundtype" "2"
-
 		}
-
 		TabActiveBorder
 		{
 			"inset" "0 0 1 0"
 			"backgroundtype" "2"
-
 		}
-
 	}
 	
     Fonts
     {
-		"UiBold"
-		{
-			"1"
-			{
-				"name"		"TF2 Build"
-				"tall"		"18"
-				"weight"	"500"
-				"additive"	"0"
-				"antialias" "1"
-			}
-		}
 		
         "DefaultFixedOutline" 
         {

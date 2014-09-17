@@ -1,5 +1,41 @@
 "Resource/HudLayout.res"
 {
+    HitmarkerBracketLeft
+    {
+        "controlName"   "CExLabel"
+        "fieldName"     "HitmarkerBracketLeft"
+        "visible"       "1" // set to 0 to disable hitmarker
+        "enabled"       "1"
+        "alpha"         "0"
+        "zpos"          "2"
+        "xpos"          "c-120"
+        "ypos"          "c-100"
+        "wide"          "200"
+        "tall"          "200"
+        "font"          "HudFontSmall"
+        "labelText"     "["
+        "textAlignment" "center"    
+        "fgcolor"       "TanLight"
+    }
+    
+    HitmarkerBracketRight
+    {
+        "controlName"   "CExLabel"
+        "fieldName"     "HitmarkerBracketRight"
+        "visible"       "1" // set to 0 to disable hitmarker
+        "enabled"       "1"
+        "alpha"         "0"
+        "zpos"          "2"
+        "xpos"          "c-80"
+        "ypos"          "c-100"
+        "wide"          "200"
+        "tall"          "200"
+        "font"          "HudFontSmall"
+        "labelText"     "]"
+        "textAlignment" "center"    
+        "fgcolor"       "TanLight"
+    }
+	
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
@@ -10,17 +46,21 @@
 		"wide"	"f0"
 		"tall"	"480"
 	}
-	
+
 	HudWeaponAmmo
-    {
-        "fieldName" "HudWeaponAmmo"
-        "visible" "1"
-        "enabled" "1"
-        "xpos"  "c100"
-        "ypos"  "c100"
-        "wide"  "95"
-        "tall"  "45"
-    }
+	{
+		"fieldName" "HudWeaponAmmo"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"r95"	[$WIN32]
+		"xpos_minmode"	"r85"	[$WIN32]
+		"ypos"	"r55"	[$WIN32]
+		"ypos_minmode"	"r36"	[$WIN32]
+		"xpos"	"r131"	[$X360]
+		"ypos"	"r77"	[$X360]
+		"wide"	"94"
+		"tall"	"45"
+	}
 	
 	HudObjectiveStatus
 	{
@@ -268,22 +308,22 @@
 		}
 	}
 	
-    CSpectatorTargetID
-    {
-        "fieldName"     "CSpectatorTargetID"
-        "visible"   "0"
-        "enabled"   "1"
-        "xpos"      "c-126"
-        "ypos"      "350"
-        "wide"      "252"
-        "tall"      "35"
-        "tall_minmode"      "28"
-        "priority"  "40"
-        "priority_lodef" "35"
-        
-        "x_offset" "20"
-        "y_offset" "20"
-    }
+	CSpectatorTargetID
+	{
+		"fieldName" 	"CSpectatorTargetID"
+		"visible" 	"0"
+		"enabled" 	"1"
+		"xpos"		"c-126"
+		"ypos"		"338"
+		"wide"	 	"252"
+		"tall"	 	"35"
+		"tall_minmode"	 	"28"
+		"priority"	"40"
+		"priority_lodef" "35"
+		
+		"x_offset" "20"
+		"y_offset" "20"
+	}
 	
 	CSecondaryTargetID
 	{
@@ -725,7 +765,7 @@
 		"wide"	 "64"
 		"tall"	 "128"
 	}
-	
+
     HudVoiceSelfStatus
     {
         "fieldName" "HudVoiceSelfStatus"
@@ -901,13 +941,9 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-133"
-		"xpos_lodef"			"c-190"
-		"ypos"				"270"
-		"ypos_lodef"			"250"
+		"ypos"					"225"
 		"wide"					"266"
-		"wide_lodef"			"400"
 		"tall"					"120"
-		"tall_lodef"			"190"
 	}
 	
 	FreezePanel
@@ -1385,6 +1421,18 @@
 		"enabled"		"1"
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
+	}
+
+	CTFFlagCalloutPanel
+	{
+		"fieldName"		"CTFFlagCalloutPanel"
+		"visible" 		"0"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"40"
+		"tall"	 		"40"
+		"priority"		"40"
 	}
 
 	"HudMenuTauntSelection"
