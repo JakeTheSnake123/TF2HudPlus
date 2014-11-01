@@ -268,6 +268,10 @@
 		{
 			"visible"	"1"
 		}
+		if_halloween_3
+		{
+			"visible"	"1"
+		}
 		if_fullmoon
 		{
 			"visible"	"1"
