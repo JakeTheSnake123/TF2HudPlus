@@ -107,6 +107,10 @@
 		{
 			"image"		"../console/background_xmas2011"
 		}
+		if_eotl_launch
+		{
+			"image"		"../console/title_eotl01"
+		}
 	}
 
 	"BackgroundHeader"
