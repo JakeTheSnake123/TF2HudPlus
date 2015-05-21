@@ -766,50 +766,41 @@
 		"tall"	 "128"
 	}
 
-    HudVoiceSelfStatus
-    {
-        "fieldName" "HudVoiceSelfStatus"
-        "visible" "1"
-        "enabled" "1"
-        "xpos" "r42" 
-        "ypos" "305"
-        "wide" "32"
-        "tall" "32"
-    }
+	HudVoiceSelfStatus
+	{
+		"fieldName" "HudVoiceSelfStatus"
+		"visible" "1"
+		"enabled" "1"
+		"xpos" "r42"
+		"ypos" "343"
+		"wide" "32"
+		"tall" "32"
+	}
 
-    HudVoiceStatus
-    {
-        "fieldName" "HudVoiceStatus"
-        "visible" "1"
-        "enabled" "1"
-        "xpos"                  "r177"
-        "ypos"                  "-45"
-        "zpos"                  "100"
-        "wide"                  "175"
-        "tall"                  "400"
+	HudVoiceStatus
+	{
+		"fieldName"				"HudVoiceStatus"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"r130"
+		"ypos"					"0"
+		"wide"					"150"
+		"tall"					"400"
 
-        "item_wide"             "170"
-        "item_tall"             "16"
-        
-        "fade_in_time"          "0.03"
-        "fade_out_time"         "0.2"       
-        
-        "show_avatar"           "1"
-        "avatar_xpos"           "10"
-        "avatar_ypos"           "2"
-        "avatar_wide"           "12"
-        "avatar_tall"           "12"
-        
-        "show_dead_icon"        "1"
-        "dead_xpos"             "1"
-        "dead_ypos"             "0"
-        "dead_wide"             "16"
-        "dead_tall"             "16"
-        
-        "show_voice_icon"       "0"
-        
-        "text_xpos"             "34"
-    }
+		"item_wide"				"120"
+		"item_tall"				"28"
+		
+		"show_avatar"			"1"
+		"avatar_xpos"			"-15"
+		"avatar_ypos"			"2"
+		"avatar_wide"			"24"
+		"avatar_tall"			"24"
+		
+		"show_dead_icon"		"0"
+		"show_voice_icon"		"0"
+		
+		"text_xpos"				"30"
+	}
 
 	HudHintDisplay
 	{
